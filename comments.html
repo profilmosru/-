@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей, css-файлов -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Ruslan+Display&family=Neucha&display=swap');</style>
+   <style>
+       .card {
+           word-break: break-all;
+       }
+       main {
+           background: none;
+       }
+       body {
+           background: url('back.gif') no-repeat center center fixed;
+           background-size: cover;
+       }
+       .lfl {
+           display:flex;
+           align-items: center;
+       }
+       .myOwn {
+           background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+           background-color: #44c767;
+           border-radius: 42px;
+           border: 12px solid #18ab29;
+           display: inline-block;
+           cursor: pointer;
+           color: #ffffff;
+           font-family: Arial;
+           font-size: 15px;
+           font-weight: bold;
+           padding: 7px 76px;
+           text-decoration: none;
+           text-shadow: 0px 4px 2px #2f6627;
+       }
+
+           .myOwn:hover {
+               background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+               background-color: #5cbf2a;
+           }
+
+           .myOwn:active {
+               position: relative;
+               top: 1px;
+           }
+
+       @media (min-width: 768px) {
+           .cardsa {
+               max-width: 50%;
+           }
+           .containerOut {
+               display: grid;
+               grid-template-columns: 1fr 2fr;
+               grid-template-rows: 1fr;
+               gap: 0px 0px;
+           }
+           .containerIn {
+               display: grid;
+               grid-template-columns: 1fr;
+               grid-template-rows: 1fr 4fr;
+               gap: 0px 0px;
+           }
+           /*footer {
+               position: absolute;
+               left: 0;
+               bottom: 0;
+           }*/
+       }
+   </style>
+    <!-- Сценарии JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+var clockz = true;
+        $(document).ready(function () {
+            $(document).mouseleave(function (e) {
+                if
+                    (matchMedia(
+                        "(min-width: 768px)"
+                    ).matches) {
+                    if (clockz) {alert("Напоминаем Вам, что лучшие электронные игрушки есть только у нас!"); clockz = false;}
+                }
+            });
+        });
+        
+        function addOtziv() {
+            var elem = document.getElementById("otziv_canvas");
+            var data = prompt("Мы ценим Ваше мнение! Введите свой в поле ниже. ");
+            if (data != null && data != undefined && data != "") {
+                elem.innerHTML = elem.innerHTML + '<div class="card"><div class="containerOut"><div class=" = containerIn"><div class="cards_container"></div><div class="lfl"><p>Аноним</p></div><div class="lfl" style="margin-bottom:50%"><img src="ava4.jpg" alt="" /></div></div><p class="rusStyle" style="padding:5%">' + data + "</p></div></div>";
+            }
+            elem = document.getElementById("db_canvas");
+            elem.style.cssText = "display:none;"
+            elem = document.getElementById("rm_canvas");
+            elem.style.cssText = "display:flex;"
+
+        }
+        function deleteOtziv() {
+            elem = document.getElementById("db_canvas");
+            elem.style.cssText = "display:flex;"
+            elem = document.getElementById("rm_canvas");
+            elem.style.cssText = "display:none;"
+            var elem = document.getElementById("otziv_canvas");
+            elem.innerHTML = "";
+        }
+
+    </script>
+    <!-- Заголовок страницы -->
+    <title>Магазин Электронных Игрушек - О Нас</title>
+</head>
+<body>
+
+    <!-- Панель навигации -->
+    <header class="header">
+        <!-- Логотип сайта -->
+        <a href="index.html">
+            <img class="logo  wrapper animated fadeInRight" id="pc" src="logo_pc.png" style="width:50%;padding:1%" />
+            <img class="logo  wrapper animated fadeInDown" id="mob" src="logo_small.png" style="width:50%;padding:1%" />
+        </a>
+        <!-- Иконка для бургер-меню -->
+        <input class="side-menubar" type="checkbox" id="side-menubar" style="display:none" />
+        <label class="burger" for="side-menubar"><img src="shar.png" class="hamUn" /></label>
+        <!-- Меню в верхнем колонтитуле -->
+        <nav class="nav">
+            <div class="wrapper animated fadeIn">
+                <ul class="menubar" style="font-family:'Rubik Distressed'">
+                    <li><a href="info.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея товаров</a></li>
+                    <li><a href="comments.html">Отзывы</a> </li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ключевое содержание -->
+    <main>
+        <article style="align-items:center">
+            <div class="card wrapper animated fadeInDown" style="min-width:90%">
+                <h1 class="heading">
+                    Отзывы клиентов
+                </h1>
+                <div class="cards_container cardsa">
+                    <div class="card">
+                        <div class="containerOut">
+                            <div class=" = containerIn"><div class="cards_container"></div><div class="lfl"><p>Иван Иванов</p></div><div class="lfl" style="margin-bottom:50%"><img src="ava1.jpg" alt="" /></div></div>
+                            <p class="rusStyle" style="padding:5%">
+                                Это сайт лучшего магазина электронных игрушек! Ассортимент огромен, цены низкие, поддержка учтивая! Очень сильно поразил радиоуправляемый троллейбус, купил несколько для себя. Всем рекомендую! Моя оценка - 10 баллов из 10!
+                                Достоинства: цены ниже чем в других магазинах,ассортимент очень большой,акции и бонусы, удобный сайт.
+                                Недостатки: Их не обнаружил.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerOut">
+                            <div class=" = containerIn"><div class="cards_container"></div><div class="lfl"><p>Ольга Олеговна</p></div><div class="lfl" style="margin-bottom:50%"><img src="ava2.jpg" alt="" /></div></div>
+                            <p class="rusStyle" style="padding:5%">
+                                Самые лучшие электронные игрушки - только у них! Всегда покупаю их здесь, богатый ассортимент и своя изюминка в каждом товаре! Огромное количество моделей, которые с легкостью можно выбрать. В первую очередь, хочу отметить качество. Оно всегда на высоте!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerOut">
+                            <div class=" = containerIn"><div class="cards_container"></div><div class="lfl"><p>Александра Александровна</p></div><div class="lfl" style="margin-bottom:50%"><img src="ava3.jpg" alt="" /></div></div>
+                            <p class="rusStyle" style="padding:5%">
+                                Всей семьёй покупаем игрушки в их торговых точках, всегда остаёмся удовлетворены: в том числе, качеством и содержанием. Очень богатый выбор электронных игрушек. Приятно заходить в магазин, где всегда встречают вежливо и приветливо. И ещё один плюс: всегда всё есть в наличии.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="otziv_canvas"></div>
+                    <div class="lfl" id="db_canvas" style="display:flex;"><a onclick="addOtziv()" class="myOwn">Хочу добавить анонимный отзыв</a></div>
+                    <div class="lfl" id="rm_canvas" style="display:none;"><a onclick="deleteOtziv()" class="myOwn">Хочу удалить свой отзыв</a></div>
+                </div>
+                <br />
+            </div>
+        </article>
+
+    </main>
+    <footer class="footer">
+        © Интернет-ресурс "Магазин электронных игрушек", автор - Романенко Андрей Георгиевич, РТУ МИРЭА, группа ИКБО-02-21 (2022)<br />
+        Никакая часть кода или контента не может быть скопирована или опубликована без явного письменного разрешения правообладателя.
+    </footer>
+</body>
+</html>

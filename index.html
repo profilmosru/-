@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей, css-файлов -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Ruslan+Display&family=Neucha&display=swap');</style>
+    <!-- Сценарии JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+var clockz = true;
+        $(document).ready(function () {
+            $(document).mouseleave(function (e) {
+                if
+                    (matchMedia(
+                        "(min-width: 768px)"
+                    ).matches) {
+                    if (clockz) {alert("Напоминаем Вам, что лучшие электронные игрушки есть только у нас!"); clockz = false;}
+                }
+            });
+        });
+
+    </script>
+    <!-- Заголовок страницы -->
+    <title>Магазин Электронных Игрушек - Главная Страница</title>
+</head>
+<body>
+
+    <!-- Панель навигации -->
+    <header class="header">
+        <!-- Логотип сайта -->
+        <a href="index.html">
+            <img class="logo wrapper animated fadeInRight" id="pc" src="logo_pc.png" style="width:50%;padding:1%" />
+            <img class="logo  wrapper animated fadeInDown" id="mob" src="logo_small.png" style="width:50%;padding:1%" />
+        </a>
+        <!-- Иконка для бургер-меню -->
+        <input class="side-menubar" type="checkbox" id="side-menubar" style="display:none" />
+        <label class="burger" for="side-menubar"><img src="shar.png" class="hamUn" /></label>
+
+        <!-- Меню в верхнем колонтитуле -->
+        <nav class="nav">
+            <div class="wrapper animated fadeIn">
+                <ul class="menubar" style="font-family:'Rubik Distressed'">
+                    <li><a href="info.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея товаров</a></li>
+                    <li><a href="comments.html">Отзывы</a> </li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ключевое содержание -->
+    <main>
+        <article >
+            <h1 class="heading wrapper animated fadeInLeft">
+                Добро пожаловать на сайт магазина электронных игрушек!
+            </h1>
+            <p>
+                <div class="cards-container">
+                    <div class="card wrapper animated fadeInDown">
+                        <p class="rusStyle">
+                            Здесь вы сможете купить электронные игрушки для детей и взрослых по самым низким ценам.<br />
+                            В нашем магазине представлены самые популярные электронные игрушки, которые Вы сможете купить в каждом из наших магазинов по всей России.<br />
+                            Мы предлагаем своим клиентам:<br />
+                            • широкий ассортимент электронных игрушек в наличии;<br />
+                            • доставку в день заказа;<br />
+                            • возможность оплаты при получении товара;<br />
+                            • удобную систему навигации по сайту.<br />
+                            Электронные игрушки - это не только развлечение, но и отличный способ занять ребенка, развить его и раскрыть способности.<br />
+                        </p>
+                    </div>
+                    <h1 class="heading wrapper animated fadeInRight">
+                        Наши избранные товары
+                    </h1>
+                    <div class="card wrapper animated fadeInDown">
+                        <div class="containerPromo">
+                            <div class="card">
+                                <p class="rusStyle">
+                                    Абсолютный хит сезона - радиоуправляемый троллейбус!<br />
+                                    Спешите приобрести себе и своему ребёнку радиоуправляемый троллейбус!<br /> 
+                                    Такой подарок понравится как девочкам, так и мальчикам.<br />
+                                    Троллейбус - это не просто игрушка, это настоящий транспорт, <br />
+                                    который поможет ребенку почувствовать себя взрослым, управляя большим средством передвижения.<br />
+                                    Кроме того, троллейбус очень похож на настоящий, поэтому будет интересен не только детям, но и взрослым,<br />
+                                    начавшим забывать, как выглядит и как устроен самый песрпективный вид городского общественного транспорта.<br />
+                                    У троллейбуса есть звуковые и световые эффекты, он очень красиво светится, а также имеет пульт управления.<br />
+                                    При движении у троллейбуса загораются фары, колеса крутятся, а звуковые эффеты включаются при нажатии на кнопку.<br />
+                                    Троллейбус ездит как по гладкой поверхности, так и по наклонной плоскости. Он манёвренный и бесшумный.<br />
+                                    Игрушка развивает воображение, внимание, память, мелкую моторику рук.<br />
+                                </p><br /><br /><br />
+                                <a class="menubarLike" href="contact.html">Связаться с нами</a>
+                            </div>
+                            <img class="zoomable" src="mashtir_emas.png" style="width:85%" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerPromo">
+                            <div class="card">
+                                <p class="rusStyle">
+                                    Старая советская электронная игра "Волк и Яйца" непременно увлечёт Вашего ребёнка!<br />
+                                    Она развивает такие навыки и качества, как скорость реакции, сообразительность, воля к победе.<br />
+                                </p>
+                                <a class="menubarLike" href="contact.html">Связаться с нами</a>
+                            </div>
+                            <img class="zoomable" src="volf_and_eggs.gif" style="width:50%" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerPromo">
+                            <div class="card">
+                                <p class="rusStyle">
+                                    Порадуйте себя и своего ребёнка инновационным детским планшетом "Лу-лу"!<br />
+                                    Это будет не только выгодная, но и УМНАЯ покупка! Эта игрушка подразумевает различные режимы взаимодействия, <br />
+                                    будь то написание историй, решение задачек или просто просмотр мультфильмов или видео.<br />
+                                    Захотите - будете играть, а если захотите отдохнуть - можно посмотреть обучающие мультики, которые встроены в приложение.<br />
+                                    "Лу-Лу" - это не просто игрушка, это развивающий планшет и умный помощник для вашего ребёнка.<br />
+                                    Приложение "Лу-Лу":<br />
+                                    - позволяет написать свою собственную историю или сказку;<br />
+                                    - в приложении есть встроенные энциклопедии о животных, растениях и мире природы,<br />
+                                    с помощью которых ребёнок сможет узнать много нового о мире вокруг;<br />
+                                </p>
+                                <a class="menubarLike" href="contact.html">Связаться с нами</a>
+                            </div>
+                            <img class="zoomable" src="plansh.png" style="width:50%" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="containerPromo">
+                            <div class="card">
+                                <p class="rusStyle">
+                                    Спешим представить Вам новую игрушку - робота Космо! <br />
+                                    Он станет настоящим другом Вашему ребёнку, позволив заменить даже живого человека, ведь он способен играть в кубики! <br />
+                                    Робот Космо (Cosmo) умеет:<br />
+                                    - строить из кубиков (в комплекте);<br />
+                                    - двигаться;<br />
+                                    - говорить на русском языке;<br />
+                                    - выполнять команды, поступающие от пульта.<br />
+                                    <br />
+                                    Космо - это робот, который может играть с ребёнком, учить его и развлекать.<br />
+                                    В комплект входят: робот Космо, пульт управления (батарейки в комплект не входят), инструкция.<br />
+                                    Возраст: от 3 лет.<br />
+                                    Размер упаковки: 13х32х18 см.<br />
+                                    Материал: пластик и др.<br />
+                                    Вес: 900 грамм.<br />
+                                </p>
+                                <a class="menubarLike" href="contact.html">Связаться с нами</a>
+                            </div>
+                            <img class="zoomable" src="cozmo.gif" style="width:90%" />
+                        </div>
+                    </div>
+                </div>
+
+</p>
+        </article>
+
+    </main>
+    <footer class="footer">
+        © Интернет-ресурс "Магазин электронных игрушек", автор - Романенко Андрей Георгиевич, РТУ МИРЭА, группа ИКБО-02-21 (2022)<br/>
+        Никакая часть кода или контента не может быть скопирована или опубликована без явного письменного разрешения правообладателя.
+    </footer>
+</body>
+</html>

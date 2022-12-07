@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей, css-файлов -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Ruslan+Display&family=Neucha&display=swap');</style>
+    <style>
+        .toyGalleryCanvas {
+            display: flex;
+            justify-content: center;
+            min-width: 60%;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Neucha';
+            font-size: 24px
+        }
+
+        .grid-container {
+            columns: 5 225px;
+            column-gap: 1.4rem;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+            .grid-container div {
+                background-image:linear-gradient(gold, rgba(0,0,0,0));
+                width: 150px;
+                margin: 0 1.4rem 1.4rem 0;
+                display: inline-block;
+                width: 100%;
+                border: groove 10px darkgoldenrod;
+                padding: 5px;
+                border-radius: 10px;
+                transition: all 0.15s ease-in-out;
+            }
+
+                .grid-container div:hover img {
+                    filter: grayscale(0);
+                }
+
+                .grid-container div:hover {
+                    border-color: yellowgreen;
+                }
+
+                .grid-container div img {
+                    width: 100%;
+                    filter: sepia(60%);
+                    border-radius: 5px;
+                    transition: all 0.25s ease-in-out;
+                }
+
+                .grid-container div p {
+                    margin: 5px 0;
+                    padding: 0;
+                    text-align: center;
+                    font-style: italic;
+                }
+    </style>
+    <!-- Сценарии JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+var clockz = true;
+        $(document).ready(function () {
+            $(document).mouseleave(function (e) {
+                if
+                    (matchMedia(
+                        "(min-width: 768px)"
+                    ).matches) {
+                    if (clockz) {alert("Напоминаем Вам, что лучшие электронные игрушки есть только у нас!"); clockz = false;}
+                }
+            });
+        });
+
+    </script>
+    <!-- Заголовок страницы -->
+    <title>Магазин Электронных Игрушек - Галерея товаров</title>
+</head>
+<body>
+
+    <!-- Панель навигации -->
+    <header class="header">
+        <!-- Логотип сайта -->
+        <a href="index.html">
+            <img class="logo  wrapper animated fadeInRight" id="pc" src="logo_pc.png" style="width:50%;padding:1%" />
+            <img class="logo  wrapper animated fadeInDown" id="mob" src="logo_small.png" style="width:50%;padding:1%" />
+        </a>
+        <!-- Иконка для бургер-меню -->
+        <input class="side-menubar" type="checkbox" id="side-menubar" style="display:none" />
+        <label class="burger" for="side-menubar"><img src="shar.png" class ="hamUn" /></label>
+
+        <!-- Меню в верхнем колонтитуле -->
+        <nav class="nav">
+            <div class="wrapper animated fadeIn">
+                <ul class="menubar" style="font-family:'Rubik Distressed'">
+                    <li><a href="info.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея товаров</a></li>
+                    <li><a href="comments.html">Отзывы</a> </li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Ключевое содержание -->
+    <main>
+        <article class="toyGalleryCanvas">
+            <h1 class="heading">
+                Галерея товаров
+            </h1>
+            <p class="rusStyle">
+                <div class="card wrapper animated fadeInDown" style="min-width:90%">
+                    Здесь вы сможете купить электронные игрушки для детей и взрослых по самым низким ценам.<br />
+                    Ниже представлена галерея с нашими лучшими электронными игрушками.<br />
+                    Все игрушки доступны по низким ценам в наших магазинах.<br />
+                    Игры с ними окажут поддержку развитию Вашего ребёнка, с ними он будет развивать моторику, логику, мышление.<br />
+                    Представлены самые популярные электронные игрушки у нас в магазине: если Вы не нашли среди них своей любимой игры,
+                    то напишите нам и мы обязательно добавим её в наш каталог.<strong>
+                        В каталоге представлен не весь ассортимент товаров, свяжитесь c нами для получения полного каталога.
+                        Мы всегда рады помочь в выборе. На некоторые игрушки может действовать акция. На некоторые - специальное предложение.
+                        Все товары в наличии доступны в наших магазинах Вашего города.
+                    Нажмите на рисунок для получения лаконичной справки.</strong>
+                    <br />
+                </div>
+                </p>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div>
+                                <h2>Электронная игра "Миниигры"</h2>
+                                <img class='grid-item zoomable' onclick="alert('В наличии - 6 игр; Они займут вашего ребёнка минимум на год.')"; src='tovar_1.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 512 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Робот Ву-Ви</h2>
+                                <img class='grid-item zoomable' onclick="alert('Это чудо робототехники отличает от человека только внешность.')"; src='tovar_2.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 10 000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Электронная логическая игра</h2>
+                                <img class='grid-item zoomable' onclick="alert('Если Вы хотите, чтобы Ваш ребёнок был успешен в жизни, купите ему эту развивающую игру.')"; src='tovar_3.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 2000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Робопёс</h2>
+                                <img class='grid-item zoomable' onclick="alert('Ваши дети мечтают о собаке, но мешает алегрия или нет денег на корм? Купите робопса!')"; src='tovar_4.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 5000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Десткая касса</h2>
+                                <img class='grid-item zoomable' onclick="alert('Планируете устроить Вашего ребёнка в магазин? Детская касса - отличная тренировка!')"; src='tovar_5.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 3000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Игра в кирпичи</h2>
+                                <img class='grid-item zoomable' onclick="alert('Классическая игра Brick Game.')"; src='tovar_6.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 500 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Робомышь</h2>
+                                <img class='grid-item zoomable' onclick="alert('Ваш ребёнок мечтает о своей мыши, но они не заводятся в Вашем доме? Не беда: купите робомышь, она особенно понравится Вашему коту.')"; src='tovar_7.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет | также для кошек <br /> Цена: 4000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Многоэкранная игра "Пираты"</h2>
+                                <img class='grid-item zoomable' onclick="alert('Эта ролевая игра надолго займёт Ваше чадо либо Вас самих.')"; src='tovar_8.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 1500 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Три в одном: игра, часы, будильник</h2>
+                                <img class='grid-item zoomable' onclick="alert('Легендарная игра про волка и яйца научит Вашего ребёнка реагировать быстро, а вставать - вовремя.')"; src='tovar_9.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 6000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Энциклопедия интерактивная</h2>
+                                <img class='grid-item zoomable' onclick="alert('Боитесь, дитя вырастет неучем? Это не беда, ему не уйти от знаний, всё кругом будет ему знакомо. Не отрывайте его от себя и сыграйте с ним в эту энциклопедию.')"; src='tovar_10.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Детский телефон</h2>
+                                <img class='grid-item zoomable' onclick="alert('Игрушечный телефон. Давно не видели внуков? Предалагаем сыграть в игру: позвоните на него, спросите, где они были, как они жили.')" src='tovar_11.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 5 лет <br /> Цена: 1994 рубля<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Набор игр нового поколения (в асс.)</h2>
+                                <img class='grid-item zoomable' onclick="alert('Ваш ребёнок весёлый? Он сам определит, повар он либо футболист. Также доступны игры про автослал и покорение глубин. ')" src='tovar_12.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 1980 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Тамагочи</h2>
+                                <img class='grid-item zoomable' onclick="alert('Хотите настоящего питомца, но не сейчас? Этот - не менее настоящий! Он научит Вашего ребёнка заботе и вниманию. Только не забудьте его вовремя покормить...')" src='tovar_13.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 1235 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2> Маленькие игры: Кот-рыболов / Хоккей</h2>
+                                <img class='grid-item zoomable'  onclick="alert('Кем себя чувствует Ваш ребёнок - хоккеистом или котом-рыболовом? У Вас будет шанс узнать, если купите сразу две игры!')" src='tovar_14.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 1000 рублей<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Десткий танк</h2>
+                                <img class='grid-item zoomable'  onclick="alert('Кругом одно дурное влияние? Примите решение о покупке детского танка советского образца для Вашего мальчика, чтобы с молодых ногтей приучить его к мужской работе. Специальное предложение: скидка при покупке вместе с игрой Стрелок.')" src='tovar_15.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 2402 рубля<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Игра Стрелок</h2>
+                                <img class='grid-item zoomable' onclick="alert('Тренируйте меткость и реакцию вашего ребёнка с игрой стрелок. Специальное предложение: скидка при покупке вместе с танком.')" src='tovar_16.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 6 лет <br /> Цена: 2022 рубля<br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                            <div>
+                                <h2> Московский троллейбус</h2>
+                                <img class='grid-item zoomable'  onclick="alert(' Л у ч ш и й  п о д а р о к . ')" src='tovar_17.jpg' alt=''>
+                                <p class="rusStyle">
+                                    Возраст: от 3 лет <br /> <p style="color: red; animation: shadowscale 2s infinite ease-in-out;">Нет в наличии; ожидается поступление после 12 сентября 2023 года<p/><br />
+                                    <div class="menubarLike"><a href="contact.html"><p style="color:darkgreen">Хочу этот товар!</p></a></div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+
+    </main>
+    <footer class="footer">
+        © Интернет-ресурс "Магазин электронных игрушек", автор - Романенко Андрей Георгиевич, РТУ МИРЭА, группа ИКБО-02-21 (2022)<br/>
+        Никакая часть кода или контента не может быть скопирована или опубликована без явного письменного разрешения правообладателя.
+    </footer>
+</body>
+</html>

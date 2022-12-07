@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей, css-файлов -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Ruslan+Display&family=Neucha&display=swap');</style>
+   <style>
+       .card {
+           padding:5%;
+       }
+       main {
+           background: none;
+       }
+       body {
+           background: url('back.gif') no-repeat center center fixed;
+           background-size: cover;
+       }
+       .lfl {
+           display:flex;
+           align-items: center;
+       }
+       .myOwn {
+           background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+           background-color: #44c767;
+           border-radius: 42px;
+           border: 12px solid #18ab29;
+           display: inline-block;
+           cursor: pointer;
+           color: #ffffff;
+           font-family: Arial;
+           font-size: 15px;
+           font-weight: bold;
+           padding: 7px 76px;
+           text-decoration: none;
+           text-shadow: 0px 4px 2px #2f6627;
+       }
+
+           .myOwn:hover {
+               background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+               background-color: #5cbf2a;
+           }
+
+           .myOwn:active {
+               position: relative;
+               top: 1px;
+           }
+
+       @media (min-width: 768px) {
+           .cardsa {
+               max-width: 50%;
+           }
+           .containerOut {
+               display: grid;
+               grid-template-columns: 1fr 2fr;
+               grid-template-rows: 1fr;
+               gap: 0px 0px;
+           }
+           .containerIn {
+               display: grid;
+               grid-template-columns: 1fr;
+               grid-template-rows: 1fr 4fr;
+               gap: 0px 0px;
+           }
+           /*footer {
+               position: absolute;
+               left: 0;
+               bottom: 0;
+           }*/
+       }
+   </style>
+    <!-- Сценарии JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+var clockz = true;
+        $(document).ready(function () {
+            $(document).mouseleave(function (e) {
+                if
+                    (matchMedia(
+                        "(min-width: 768px)"
+                    ).matches) {
+                    if (clockz) {alert("Напоминаем Вам, что лучшие электронные игрушки есть только у нас!"); clockz = false;}
+                }
+            });
+        });
+    </script>
+
+    <!-- Заголовок страницы -->
+    <title>Магазин Электронных Игрушек - О Нас</title>
+</head>
+<body>
+
+    <!-- Панель навигации -->
+    <header class="header">
+        <!-- Логотип сайта -->
+        <a href="index.html">
+            <img class="logo  wrapper animated fadeInRight" id="pc" src="logo_pc.png" style="width:50%;padding:1%" />
+            <img class="logo  wrapper animated fadeInDown" id="mob" src="logo_small.png" style="width:50%;padding:1%" />
+        </a>
+        <!-- Иконка для бургер-меню -->
+        <input class="side-menubar" type="checkbox" id="side-menubar" style="display:none" />
+        <label class="burger" for="side-menubar"><img src="shar.png" class="hamUn" /></label>
+        <!-- Меню в верхнем колонтитуле -->
+        <nav class="nav">
+            <div class="wrapper animated fadeIn">
+                <ul class="menubar" style="font-family:'Rubik Distressed'">
+                    <li><a href="info.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея товаров</a></li>
+                    <li><a href="comments.html">Отзывы</a> </li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ключевое содержание -->
+    <main>
+        <article style="align-items:center">
+            <div class="card wrapper animated fadeInDown" style="min-width:90%">
+                <h1 class="heading">
+                    Свяжитесь с нами!
+                </h1>
+                <div class="cards_container cardsa">
+                    <div class="card">
+      <p>Вы можете заказать электронную игрушку или связаться с нами, написав письмо на электронную почту mail@moyeltoy-shop.ru  или позвонив по телефону 88001002755434343. Наш флагманский магазин располагается по адресу "Город Москва, улица Тверская, дом 13". Вы можете уточнить у нас наличие магазина в Вашем районе.</p>
+                            <form name="outDup" method="POST" action="">
+                                <div style="padding:5%;font-size:115%;>Форма связи</div>
+                                <div style="padding:5%;font-size:110%;>Тема обращения</div>
+                                <select class="rusStyle" style="padding:5%;font-size:110%;" name="theme" required="required">
+                                    <option class="rusStyle" style="padding:5%;font-size:110%;" value="">Выберите опцию:</option>
+                                    <option class="rusStyle" style="padding: 5%; font-size: 110%;">Нужна помощь с покупкой</option>
+                                    <option class="rusStyle" style="padding: 5%; font-size: 110%;">Хочу отложить/купить товар</option>
+                                    <option class="rusStyle" style="padding: 5%; font-size: 110%;">Хочу заказать доставку</option>
+                                    <option class="rusStyle" style="padding: 5%; font-size: 110%;">Вопрос по сайту</option>
+                                    <option class="rusStyle" style="padding: 5%; font-size: 110%;">Обращение иного характера</option>
+                                </select>
+                                <div class="rusStyle" style="padding:5%"> Ваше Ф. И. О.</div>
+                                <input class="rusStyle" style="padding:5%" type="text" name="name" required="required">
+                                <div class="rusStyle" style="padding:5%">Адрес электронной почты</div>
+                                <input class="rusStyle" style="padding:5%" type="email" name="email" required="required">
+                                <div class="rusStyle" style="padding:5%">Сообщение для оператора</div>
+                                <textarea class="rusStyle" style="padding:5%" name="message"></textarea>
+                                <input class="rusStyle" style="padding:5%" type="submit" name="submit_btn" value="Готово">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br />
+        </article>
+
+    </main>
+    <footer class="footer">
+        © Интернет-ресурс "Магазин электронных игрушек", автор - Романенко Андрей Георгиевич, РТУ МИРЭА, группа ИКБО-02-21 (2022)<br />
+        Никакая часть кода или контента не может быть скопирована или опубликована без явного письменного разрешения правообладателя.
+    </footer>
+</body>
+</html>

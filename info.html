@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение стилей, css-файлов -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Ruslan+Display&family=Neucha&display=swap');</style>
+   <style>
+       main {
+           background: none;
+       }
+       body {
+           background: url('back.gif') no-repeat center center fixed;
+           background-size: cover;
+       }
+       @media (min-width: 768px) {
+           footer {
+               position: absolute;
+               left: 0;
+               bottom: 0;
+           }
+       }
+   </style>
+      <!-- Сценарии JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+var clockz = true;
+        $(document).ready(function () {
+            $(document).mouseleave(function (e) {
+                if
+                    (matchMedia(
+                        "(min-width: 768px)"
+                    ).matches) {
+                    if (clockz) {alert("Напоминаем Вам, что лучшие электронные игрушки есть только у нас!"); clockz = false;}
+                }
+            });
+        });
+    </script>
+    <!-- Заголовок страницы -->
+    <title>Магазин Электронных Игрушек - О Нас</title>
+</head>
+<body>
+
+    <!-- Панель навигации -->
+    <header class="header">
+        <!-- Логотип сайта -->
+        <a href="index.html">
+            <img class="logo  wrapper animated fadeInRight" id="pc" src="logo_pc.png" style="width:50%;padding:1%" />
+            <img class="logo  wrapper animated fadeInDown" id="mob" src="logo_small.png" style="width:50%;padding:1%" />
+        </a>
+        <!-- Иконка для бургер-меню -->
+        <input class="side-menubar" type="checkbox" id="side-menubar" style="display:none" />
+        <label class="burger" for="side-menubar"><img src="shar.png" class ="hamUn" /></label>
+
+        <!-- Меню в верхнем колонтитуле -->
+        <nav class="nav">
+            <div class="wrapper animated fadeIn">
+                <ul class="menubar" style="font-family:'Rubik Distressed'">
+                    <li><a href="info.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея товаров</a></li>
+                    <li><a href="comments.html">Отзывы</a> </li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Ключевое содержание -->
+    <main>
+        <article style="align-items:center">
+            <div class="card wrapper animated fadeInDown" style="min-width:90%">
+                <h1 class="heading">
+                    О нас
+                </h1>
+                <p class="rusStyle">
+                    Мы - команда "Магазина электронных игрушек". <br />
+                    Мы радуем Вас и Ваших детей с девяностых годов и по сей день. <br />
+                    Мы не просто продаем игрушки, мы пытаемся сделать так, чтобы ребенок с самого детства начал разбираться в том, что ему нравится, где его место в этом мире и как его в этом месте занять.<br />
+                    Позвольте рассказать Вам немного о нас.<br />
+                    Мы продаем только качественные игрушки. <br />
+                    Все наши игрушки прошли сертификацию и проверку на безопасность. Мы работаем с крупными производителями, которые выпускают только качественную продукцию.<br />
+                    Мы работаем только с проверенными поставщиками и производителями.
+                    Мы предлагаем вам только те игрушки, которые действительно интересны детям и подходят для их возраста.
+                    У нас есть игрушки для детей от 1 года до 18 лет.
+                    Вы можете выбрать игрушки в соответствии с возрастом вашего ребенка. По большей части это классические, проверенные временем, модели.
+                    Однако мы не ограничиваем ваши возможности: если вы не нашли в нашем каталоге то, что вам нужно, вы можете заказать электронную игрушку, написав письмо на электронную почту <a href="mailto:mail@moyeltoy-shop.ru">mail@moyeltoy-shop.ru</a> или позвонив <a href="tel:8800100275434343">по телефону
+    8 800 100 27 55434343 (звонок бесплатный).</a>
+    <br />
+</p>
+            </div>
+        </article>
+
+    </main>
+    <footer class="footer">
+        © Интернет-ресурс "Магазин электронных игрушек", автор - Романенко Андрей Георгиевич, РТУ МИРЭА, группа ИКБО-02-21 (2022)<br/>
+        Никакая часть кода или контента не может быть скопирована или опубликована без явного письменного разрешения правообладателя.
+    </footer>
+</body>
+</html>
